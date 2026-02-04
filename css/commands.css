@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   position: relative;
   padding-bottom: 60px;
-  padding-top: 60px; /* Для шапки */
+  padding-top: 60px;
   color: #e0e0e0;
 }
 
@@ -141,9 +141,14 @@ footer {
   width: 100%;
   background: #1a1a1a;
   border-top: 1px solid #333;
-  padding: 16px 20px;
   text-align: center;
   z-index: 100;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +156,7 @@ footer {
 
 footer p {
   color: #888;
-  font-size: 13px;
+  font-size: 15px;
   margin: 0;
   letter-spacing: 0.5px;
 }
@@ -185,7 +190,7 @@ footer p {
     font-size: 12px;
   }
   
-  footer {
+  .footer-content {
     flex-direction: column;
     gap: 10px;
   }
