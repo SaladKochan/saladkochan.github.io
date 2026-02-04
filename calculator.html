@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 🥬 AnvilCalc</title>
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="index.html" class="logo"> 🥬 </a>
+      <div class="weather">𝙼𝚞𝚛𝚖𝚊𝚗𝚜𝚔 - °C <i class="fas fa-cloud"></i> - % <i class="fas fa-wind"></i> - м/с</div>
+    </div>
+  </header>
+  <div class="background-animation"></div>
+  
+  <div class="container">
+    <div class="header">
+      <div class="lang-switch">
+        <button id="ruBtn" class="lang-btn">РУ</button>
+        <button id="enBtn" class="lang-btn active">EN</button>
+      </div>
+      <h1 id="title">Заголовок</h1>
+      <p id="description">Описание</p>
+    </div>
+
+    <div class="card">
+      <div class="inputs">
+        <div class="input-group">
+          <label id="labelFirst">1 hit:</label>
+          <input type="number" id="firstHit" value="0" class="input-field">
+        </div>
+        <div class="input-group">
+          <label id="labelSecond">2 hit:</label>
+          <input type="number" id="secondHit" value="0" class="input-field">
+        </div>
+        <div class="input-group">
+          <label id="labelLast">3 hit:</label>
+          <input type="number" id="lastHit" value="0" class="input-field">
+        </div>
+        <div class="input-group">
+          <label id="labelTarget">Смещение:</label>
+          <input type="number" id="targetValue" value="0" class="input-field">
+        </div>
+      </div>
+
+      <button id="calculateBtn" class="calculate-btn">Посчитать</button>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+
+  <footer class="footer">
+    <p>𝙼𝚊𝚍𝚎 𝚏𝚘𝚛 𝚃𝚎𝚛𝚛𝚊𝙵𝚒𝚛𝚖𝚊𝙲𝚛𝚊𝚏𝚝/𝚃𝚎𝚛𝚛𝚊𝙵𝚒𝚛𝚖𝚊𝙶𝚛𝚎𝚐 • 𝙼𝚊𝚍𝚎 𝚋𝚢 𝚂𝚊𝚕𝚊𝚍𝙶𝚊𝚖𝚎𝚛</p>
+    <div class="social-icons">
+        <a href="https://github.com/SaladKochan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  
+  <script src="js/calculator.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
