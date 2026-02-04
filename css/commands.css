@@ -6,9 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-  background-size: 400% 400%;
-  animation: gradientShift 10s ease infinite;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d, #1a1a1a);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,12 +59,6 @@ body {
 
 .weather i {
   margin-right: 2px;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 .background-animation {
