@@ -320,3 +320,16 @@ footer p {
     font-size: 12px;
   }
 }
+
+#flying-emote {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://cdn.7tv.app/emote/01KFTM8A65256GQD3FSCBT03FR/4x.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0; /* Над фоном, но под контентом */
+}

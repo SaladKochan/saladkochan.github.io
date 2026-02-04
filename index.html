@@ -15,6 +15,7 @@
     </div>
   </header>
   <div class="background-animation"></div>
+  <div id="flying-emote"></div>
   <div class="container">
     <header>
         <h1> </h1>
@@ -48,5 +49,34 @@
             <a href="https://t.me/kochanovoe" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
         </div>
   <script src="js/weather.js"></script>
+  <script>
+    const flyingEmote = document.getElementById('flying-emote');
+    let x = Math.random() * (window.innerWidth - 100);
+    let y = Math.random() * (window.innerHeight - 100);
+    let dx = (Math.random() - 0.5) * 4; // скорость по x
+    let dy = (Math.random() - 0.5) * 4; // скорость по y
+
+    function animate() {
+      x += dx;
+      y += dy;
+
+      // Отскакивание от краев
+      if (x <= 0 || x >= window.innerWidth - 100) {
+        dx = -dx;
+        x = Math.max(0, Math.min(x, window.innerWidth - 100));
+      }
+      if (y <= 0 || y >= window.innerHeight - 100) {
+        dy = -dy;
+        y = Math.max(0, Math.min(y, window.innerHeight - 100));
+      }
+
+      flyingEmote.style.left = x + 'px';
+      flyingEmote.style.top = y + 'px';
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
 </body>
 </html>
