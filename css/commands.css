@@ -109,26 +109,10 @@ h1 {
   font-weight: 600;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-nav a {
+.subtitle {
   color: #b0b0b0;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-nav a:hover {
-  color: #e0e0e0;
+  font-size: 18px;
+  margin: 0;
 }
 
 main {
@@ -137,97 +121,25 @@ main {
   line-height: 1.6;
 }
 
-.big-button {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 20px;
-  font-weight: 500;
-  background: #4a4a4a;
-  border: none;
-  border-radius: 8px;
-  color: #e0e0e0;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background 0.2s;
-  margin-top: 20px;
-}
-
-.big-button:hover {
-  background: #555;
-}
-
-.big-button:active {
-  background: #3a3a3a;
-}
-
-.subtitle {
-  color: #b0b0b0;
-  font-size: 18px;
-  margin: 0;
-}
-
-.intro {
-  margin-bottom: 40px;
-}
-
-.tools h2, .about h2 {
+.commands h2 {
   color: #e0e0e0;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.project-grid {
+.command-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 15px;
   margin-bottom: 40px;
 }
 
-.project-card {
+.command-item {
   background: rgba(31, 31, 31, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #404040;
-  text-decoration: none;
-  color: #e0e0e0;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: block;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-  margin: 0 0 10px 0;
-  font-size: 20px;
-}
-
-.project-card p {
-  margin: 0;
-  color: #b0b0b0;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.social-link {
-  color: #b0b0b0;
-  text-decoration: none;
-  padding: 8px 16px;
-  border: 1px solid #555;
+  padding: 15px;
   border-radius: 6px;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link:hover {
+  border: 1px solid #404040;
+  font-family: 'Courier New', monospace;
   color: #e0e0e0;
-  border-color: #666;
 }
 
 footer {
@@ -268,24 +180,6 @@ footer p {
   color: #e0e0e0;
 }
 
-.nav-buttons {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
-
-.back-btn {
-  color: #b0b0b0;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.back-btn:hover {
-  color: #e0e0e0;
-}
-
 @media (max-width: 600px) {
   .container {
     padding: 25px;
@@ -306,6 +200,10 @@ footer p {
   
   .social-icons {
     justify-content: center;
+  }
+  
+  .command-list {
+    grid-template-columns: 1fr;
   }
   
   .header-content {
